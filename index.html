@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>수리 들어간다</title>
+		
+		<style>
+			@font-face {
+		font-family: 'Binggrae';
+		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		}
+			body{margin: 0px; display: inline;}
+			
+			/** Header **/
+			header{width: 700px; margin: auto; position: relative;}
+			.orangeback {background-color: #F2B376;}
+			.comment {width: 700px; margin: auto; padding-top: 50px; padding-bottom: 50px;}
+			.p16 {font-size: 0.95em; color: white; font-family: 'Binggrae'; line-height: 1.6em; text-align: center; word-break: keep-all; }
+			/** Body 공통 **/
+			.section-top{margin-top: 50px;}
+			.content {padding-top: -10px; z-index: 2; text-align: center;
+				font-size: 36px; font-family: 'Binggrae'; font-size: 2.3em; font-weight: 900;}
+			.content2 {padding-top: 45px; z-index: 2; text-align: center;
+				font-size: 36px; font-family: 'Binggrae'; font-size: 2.3em; font-weight: 900;}
+			.absolute{display: block; position: absolute;}
+			
+			/** Body1 **/
+			.body1 {width: 700px; height: 1599px; background-image: url('img1.jpg'); background-size: 700px auto; background-attachment: scroll;}
+			.personal{margin: auto; width: 700px; padding-top: 121px; position: relative;}
+			.person1{left: 377px; width: 302px; top:300px; z-index: 33;}
+			.person2{left: 50px; width: 167px; top:590px; z-index: 33;}
+			.person3{left: 462px; width: 238px; top:530px; z-index: 33;}
+			.person4{left: 0px; width: 254px; top:880px; z-index: 33;}
+			.person5{left: 400px; width: 295px; top:1180px; z-index: 33;}
+			li {list-style: none; line-height: 1.65em; font-family: "Binggrae";}
+			li span {left: 125px; width: 150px; z-index: 34; vertical-align: text-top;}
+			.top1 {top: 0px;}
+			.top2 {top: 26.5px}
+			.top3 {top: 53px;}
+			.data1 {left: 150px; width: 302px; top:370px; z-index: 34;}
+			.data2 {left: 190px; width: 302px; top:580px; z-index: 34;}
+			.data3 {left: 235px; width: 302px; top:788px; z-index: 34;}
+			.data4 {left: 230px; width: 302px; top:998px; z-index: 34;}
+			.data5 {left: 250px; width: 302px; top:1206px; z-index: 34;}
+		
+			/** Body2 **/
+			.body2 {width: 700px; height: 1200px; background-image: url('img2.jpg'); background-size: 700px auto; background-attachment: scroll;}
+			.making{margin: auto; width: 700px; padding-top: 43px; position: relative;}
+			.boom{left: 530px; width: 162px; top:295px; z-index: 34}
+			.make1{left: 40px; width: 614px; top:310px; z-index: 33}
+			.make2{left: 40px; width: 614px; top:500px; z-index: 33}
+			.make3{left: 40px; width: 614px; top:690px; z-index: 33}
+			.make4{left: 40px; width: 614px; top:880px; z-index: 33}
+			.make5{left: 40px; width: 614px; top:1070px; z-index: 33}
+			.yttt{left: 260px; width: 500px; top:18px; z-index: 34;
+				font-family: "Binggrae"; font-size:1.4em; font-weight: bolder;}
+			.yttext{left: 260px; width: 500px; z-index: 34; font-family: "Binggrae"; font-size:0.85em;}
+		
+			/** Body3 **/
+			.section-3{margin-top: 150px;}
+			.body3 {width: 700px; height: 3700px; background-image: url('img3.jpg'); background-size: 700px auto; background-attachment: scroll;}
+			.merchan{margin: auto; width: 700px; padding-top: 75px; position: relative;}
+			.pay1{left: -50px; width: 300px; top:340px; z-index: 33}
+			.pay2{left: 520px; width: 250px; top:700px; z-index: 33}
+			.pay3{left: 0px; width: 350px; top:800px; z-index: 33}
+			.pay4{left: 500px; width: 300px; top:1150px; z-index: 33}
+			.pay5{left: -50px; width: 300px; top:1500px; z-index: 33}
+			.pay6{left: 500px; width: 350px; top:1600px; z-index: 33}
+			.pay7{left: 0px; width: 450px; top:1900px; z-index: 33}
+			.pay8{left: 500px; width: 200px; top:2400px; z-index: 33}
+			.pay9{left: 0px; width: 280px; top:2650px; z-index: 33}
+			.pay10{left: 100px; width: 220px; top:2750px; z-index: 33}
+			.pay11{left: 620px; width: 200px; top:2900px; z-index: 33}
+			.pay12{left: 270px; width: 187px; top:3400px; z-index: 33}
+
+			.abtext{z-index: 32; font-family: "Binggrae"; font-size:1.2em; 
+			line-height: 1.7em;word-break: keep-all;}
+
+
+			/**장식**/
+			.star1:hover {
+	transform: rotate( 720deg );
+}
+
+			/** animation-duration: 3s; animation-name: slidein;}
+			@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 20%;
+    width: 100%;
+  }
+}**/
+
+			
+			/** footer **/
+			footer {margin: auto;}
+			.footprint {font-size: 0.8em; color: white; font-family: 'Binggrae'; line-height: 1.4em; text-align: center; word-break: keep-all; }
+		</style>
+	</head>
+	<body>
+		
+		<header>
+			<div style="margin:auto;">
+			<img src="img4.jpg">
+			<img class="absolute" src="img27.png" style="left:00px; top: 100px;">
+			<img class="absolute" src="img29.png" style="left:200px; top: 20px;">
+			<img class="absolute" src="img28.png" style="left:400px; top: 350px;">
+			<img class="absolute" src="img30.png" style="left:600px; top: 270px;">
+		</div> 
+		</header>
+		<section class="orangeback">
+			<div class="comment">
+				<p class="p16">야구 경기가 없는 겨울.. 구단에서는 팬서비스 차원으로 “독수리한마당”이라는 이벤트를 개최해왔다. 콘서트와 유사한 형식의 행사인 독수리한마당은 선수들이 춤과 노래를 선보이는 등의 이벤트를 진행한다. 2020년 비시즌에 이루어져야 했던 독수리한마당은 코로나로 인해 개최되기 어려운 지경에 이르렀고 한화 이글스는 대체 이벤트로 “뉴노멀 독수리한마당”을 기획한다. 선수들 중 몇몇이 팀을 이루어 직접 팬송 앨범 제작에 참여하는 이번 행사는 유튜브에서 언박싱 영상을 제외하고 총 4화의 영상으로 제작되었다. 이번 팬 송 앨범에서는 선수들이 직접 쓴 가사로 팬들에 대한 마음을 들어볼 수 있을 뿐만 아니라 선수들이 직접 부른 애창곡이 수록되어 있어 또 다른 재미를 선사한다.</p>
+			</div>
+		</section>
+		<section class="section-top">
+			<div class="personal body1">
+				<p class="content">멤버 소개</p>
+				<img src="img5.png" class="absolute person1">
+				<ul class="absolute data1">
+					<li>
+						<strong>이름</strong>
+						<span class="absolute top1">강재민</span>
+					</li>
+					 <img class="absolute" src="img28.png" style="left:700px; top: 350px;">
+					<img class="absolute" src="img31.png" style="left:-350px; top: 70px;">
+					<li>
+						<strong>생년월일</strong>
+						<span class="absolute top2">1997.04.03</span>
+					</li>
+					<li>
+						<strong>포지션</strong>
+						<span class="absolute top3">투수</span>
+					</li>
+				</ul>
+				<img src="img6.png" class="absolute person2">
+				<ul class="absolute data2">
+					<li>
+						<strong>이름</strong>
+						<span class="absolute top1">노수광</span>
+					</li>
+					<li>
+						<strong>생년월일</strong>
+						<span class="absolute top2">1990.08.06</span>
+					</li>
+					<li>
+						<strong>포지션</strong>
+						<span class="absolute top3">외야수</span>
+					</li>
+				</ul>
+				<img src="img7.png" class="absolute person3">
+				<ul class="absolute data3">
+					<li>
+						<strong>이름</strong>
+						<span class="absolute top1">최재훈</span>
+					</li>
+					<li>
+						<strong>생년월일</strong>
+						<span class="absolute top2">1989.08.27</span>
+					</li>
+					<li>
+						<strong>포지션</strong>
+						<span class="absolute top3">포수</span>
+					</li>
+				</ul>
+				<img src="img8.png" class="absolute person4">
+				<ul class="absolute data4">
+					<li>
+						<strong>이름</strong>
+						<span class="absolute top1">노시환</span>
+					</li>
+					<img class="absolute" src="img32.png" style="left:-300px; top: 70px;">
+					<li>
+						<strong>생년월일</strong>
+						<span class="absolute top2">2000.12.03</span>
+					</li>
+					<li>
+						<strong>포지션</strong>
+						<span class="absolute top3">내야수</span>
+					</li>
+				</ul>
+				<img src="img9.png" class="absolute person5">
+				<ul class="absolute data5">
+					<li>
+						<strong>이름</strong>
+						<span class="absolute top1">정우람</span>
+					</li>
+					<li>
+						<strong>생년월일</strong>
+						<span class="absolute top2">1985.06.01</span>
+					</li>
+					<li>
+						<strong>포지션</strong>
+						<span class="absolute top3">투수</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="section-top">
+			<div class="making body2">
+				<p class="content">제작 과정</p>
+				<img src="boom.png" class="absolute boom">
+				<div class="absolute make1">
+					<a href="https://youtu.be/L_ulruc9-iU"><img src="youtube1.png"></a>
+					<div>
+						<p><span class="yttt absolute">1화) 사전기획</span></p>
+						<p><span class="yttext absolute" style="top: 60px"><span style="font-weight: bolder;"><팬들을 위해 노래 만들기</span>(팬송)></span></p>
+						<p><span class="yttext absolute" style="top: 82px">기획 의도</span></p>
+						<p><span class="yttext absolute" style="top: 102px">노수광의 메인댄서를 향한 길</span></p>
+						<p><span class="yttext absolute" style="top: 122px">멤버 소개</span></p>
+					</div>
+				</div>
+				<div class="absolute make2">
+				<a href="https://youtu.be/LliSwR_QGxE"><img src="youtube2.png"></a>
+				<div>
+						<p><span class="yttt absolute">2화) 팀명 선정</span></p>
+						<p><span class="yttext absolute" style="top: 60px; font-weight: bolder;"><인스타 라이브 팀 이름 공모전></span></p>
+						<p><span class="yttext absolute" style="top: 82px">프로듀서와의 만남</span></p>
+						<p><span class="yttext absolute" style="top: 102px">음원 후보곡 1, 2, 3</span></p>
+						<p><span class="yttext absolute" style="top: 122px">선수들의 18번 라이브</span></p>
+					</div>
+				</div>
+				<div class="absolute make3">
+				<a href="https://youtu.be/2W3jxDgNWHs"><img src="youtube3.png"></a>
+				<div>
+						<p><span class="yttt absolute">3화) 작사 프로젝트</span></p>
+						<p><span class="yttext absolute" style="top: 60px; font-weight: bolder;"><작사 전 트레이닝 게임></span></p>
+						<p><span class="yttext absolute" style="top: 82px">작사 선생님 등장!</span></p>
+						<p><span class="yttext absolute" style="top: 102px">3행시와 5행시</span></p>
+						<p><span class="yttext absolute" style="top: 122px">노래 개사하기</span></p>
+					</div>
+				</div>
+				<div class="absolute make4">
+				<a href="https://youtu.be/BmJE2BRrENk"><img src="youtube4.png"></a>
+				<div>
+						<p><span class="yttt absolute">4화) 선수 노래 선수 작사</span></p>
+						<p><span class="yttext absolute" style="top: 60px; font-weight: bolder;"><선수들이 쓴 가사로 부른 팬송 완성기></span></p>
+						<p><span class="yttext absolute" style="top: 82px">못 들은 애창곡 마저 듣기</span></p>
+						<p><span class="yttext absolute" style="top: 102px">그 동안 써 온 가사 대공개</span></p>
+						<p><span class="yttext absolute" style="top: 122px">다듬은 가사와 함께 녹음하기</span></p>
+					</div>
+				</div>
+				<div class="absolute make5">
+				<a href="https://youtu.be/SFuVnQxOC-M"><img src="youtube5.png"></a>
+				
+				<div>
+						<p><span class="yttt absolute">보너스) 앨범 키트 언박싱</span></p>
+						<p><span class="yttext absolute" style="top: 60px; font-weight: bolder;"><선수들과 함께하는 팬송 앨범 언박싱></span></p>
+						<p><span class="yttext absolute" style="top: 82px">선수들도 처음 받은 팬송 앨범 키트</span></p>
+						<p><span class="yttext absolute" style="top: 102px">생생한 코멘트와 함께 구성품 살펴보기</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-3">
+			<div class="merchan body3">
+				<p class="content2">앨범 구성</p>
+				<img class="absolute" src="img28.png" style="left:700px; top: 350px; width: 70px">
+				<img class="absolute" src="img29.png" style="left:300px; top: 200px;">
+				<img class="absolute" src="img30.png" style="left:-130px; top: 270px;">
+				<img class="absolute" src="img29.png" style="left:00px; top: 700px;">
+				<img src="img15.png" class="absolute pay1">
+				<img class="absolute" src="img28.png" style="left:200px; top: 1330px; width: 90px">
+				<img class="absolute" src="img30.png" style="left:-120px; top: 1870px; width: 50px">
+				<img class="absolute" src="img32.png" style="left:700px; top: 2270px; width: 50px">
+				<img class="absolute" src="img29.png" style="left:740px; top: 2340px;">
+				<img class="absolute" src="img28.png" style="left:-130px; top: 2970px; width: 120px">
+
+				<p><span class="abtext absolute" style="top: 470px; left:300px;">모든 구성품을 담는 박스로 간이 프로젝터용<br/>구멍이 뚫려있다!</span></p>
+				<img src="img16.png" class="absolute pay2">
+				<p><span class="abtext absolute" style="top: 800px; left:40px;">키노앨범과 가사집과 사진들을 담는 진짜 앨범박스!</span></p>
+				<img src="img17.png" class="absolute pay3">
+				<p><span class="abtext absolute" style="top: 1020px; left:350px;font-size: 1.5em;">제일 중요한 앨범 본체!</span></p>
+				<img src="img18.png" class="absolute pay4">
+				<p><span class="abtext absolute" style="top: 1280px; left:290px;font-size: 0.9em;">앨범 박스에 동봉되어 있는 가사집!<br/>노래에 실린 진짜 가사가 들어있다.</span></p>
+				<img src="img19.png" class="absolute pay5">
+				<p><span class="abtext absolute" style="top: 1565px; left:300px;">역시 앨범 박스에 동봉되어있다. 앨범 제작 과정을 담은 사진들이 앞면에, 뒷면에는 작사 종이 스캔본이 실려있다!</span></p>
+				<img src="img21.png" class="absolute pay6">
+				<p><span class="abtext absolute" style="top: 1800px; left:170px;font-size: 0.9em;">별도 상자에 담겨있는 렌티큘러 포토카드!<br/>너무나 요즘 앨범 따라하기에 진심인 구성이다...</span></p>
+				<img src="img20.png" class="absolute pay7">
+				<p><span class="abtext absolute" style="top: 2170px; left:430px;font-size: 1.2em;">선수들이 썼던 날 것 그대로의 가사 스케치 수록! 나머지는 줄노트로 채워져있다.</span></p>
+				<img src="img22.png" class="absolute pay8">
+				<p><span class="abtext absolute" style="top: 2500px; left:160px;font-size: 0.9em;">멤버들 얼굴과 앨범 그래픽들로 이루어진 스티커!<br/>노트북에 붙여보자.</span></p>
+				<img src="img23.png" class="absolute pay9">
+				<img src="img24.png" class="absolute pay10">
+				<p><span class="abtext absolute" style="top: 2800px; left:350px;">상자와 렌즈를 아용해 간이 스마트폰 프로젝터를 만들 수 있다. 설명서가 함께 있으니 어렵지 않다!</span></p>
+				<img src="img25.png" class="absolute pay11">
+				<p><span class="abtext absolute" style="top: 3045px; left:95px;font-size: 1.5em;">대망의 보조배터리... 신식이라 무선 충전이 된다.</span></p>
+				<img src="img26.png" class="absolute pay12">
+				
+			</div>
+		</section>
+
+		<footer class="orangeback section-top">
+			<div class="comment">
+				<p class="footprint">link for Eagles Shop -> https://eagles.lockerdium.co.kr/goods/goods_view.php?goodsNo=1000002639&mtn=93%5E%7C%5E%23+MD%EF%BC%87S+PICK%5E%7C%5En</p>
+			</div>
+		</footer>
+	</body>
+</html>
